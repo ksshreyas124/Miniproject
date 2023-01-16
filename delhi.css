@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap');
+ *{
+    font-family: 'Poppins', sans-serif;
+    margin: 0; padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: .2s linear;
+ }
+.container{
+    background: linear-gradient(#e66465, #9198e5); 
+    padding: 15px 9%;
+    /* padding-bottom: 100px; */
+
+}
+.container .heading{
+
+    text-align: center;
+    padding-bottom: 15px;
+    color:#fff;
+    text-shadow: 0 5px 10px black;
+    font-size: 30px;
+}
+.container .box-contain{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(270px,1fr));
+    gap: 15px;
+}
+img{
+    object-fit: cover;
+  width: 100%;
+  max-height: 100%;
+}
+.container .box-contain .box{
+   box-shadow: 0, 5px 10px rgba(0,0,0,0.2); 
+   border-radius: 5px;
+   background-color: #fff;
+   text-align: center;
+   padding: 30px 20px;
+}
+.container .box-contain .box h2{
+   color:rgb(81, 80, 82);
+   font-size: 22px;
+
+   padding: 10px 0;
+}
+.container .box-contain .box p{
+  color: #444;
+    font-size: 15px;
+    line-height: 1.8;
+}
+.container .box-contain .box .btn{
+    display: inline-block;
+    margin-top: 15px;
+    color:rgb(39, 38, 38);;
+    font-size: 17px;
+    padding: 8px 25px;
+    text-decoration: underline;
+}
+.container .box-contain .box .btn:hover{
+    text-decoration: overline;
+}
+.container .box-contain .box:hover{
+    box-shadow: 0, 10px 15px rgba(0,0,0,0.3); 
+    transform: scale(1.02);
+
+}
+.container .box-contain .box:hover > .box-contain:hover::after{
+    opacity: 1;
+}
+button{
+    text-decoration: none;
+    text-align: center;
+    margin-left: 100%;
+    background-color: #ffffff;
+    color: black;
+    border-radius: 8px;
+}
